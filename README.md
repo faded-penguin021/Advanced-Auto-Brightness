@@ -37,11 +37,13 @@ Place screenshots or a demo GIF in `assets/` and reference them here.
 
 ## How it works
 
-## Configure in-app (recommended)
-Use the built-in scenes to configure everything: General, Reactivity, Brightness, Misc, and About. Manual variable editing is only for advanced tweaking.
-
-Sensor events are filtered for accuracy, compared to thresholds, then brightness is adjusted smoothly to avoid flicker.
-
+- Sensor pipeline: Subscribes to ambient light updates, applies accuracy gating (with an option to trust unreliable readings), and throttles sampling to save battery.
+- Proximity-aware: Uses proximity detection to dampen or block updates when the sensor is covered (e.g., pocket/face). Initializes cleanly on display-on and hibernates on display-off.
+- Curve mapping: A configurable brightness curve maps lux → target brightness; tune it in the Brightness tab with a live graph.
+- Dynamic dead‑zone: A log-scale dead‑zone ignores minor lux jitter to eliminate flicker; visualize/tune it in the Reactivity graph.
+- Adaptive smoothing (dynamic alpha): Small changes are smoothed slowly; large, intentional deltas ramp quickly but remain smooth; explore it in the Alpha graph.
+- Animation and limits: Tapering and caps prevent jarring jumps and respect min/max limits for comfort.
+- Overrides and controls: A manual override switch, persistent notification, and paused/foreground states give you full control at a glance.
 ## Contributing / Updating
 - Replace `tasker/Advanced-Auto-Brightness.prj.xml` with your updated export
 - Bump a tag `vX.Y.Z` to publish a release (workflow attaches the project file)

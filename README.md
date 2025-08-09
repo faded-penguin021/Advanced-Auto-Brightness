@@ -88,7 +88,7 @@ MIT. See `LICENSE`.
 - Brightness not changing: grant Modify System Settings (Android Settings → Apps → Tasker → Special access)
 - No sensor updates: disable battery optimizations for Tasker
 - Flicker: increase Reactivity dead‑zone or smoothing
-- Too slow/fast: adjust Delta factor and taper rates
+- Too slow/fast: adjust Delta factor (dynamic alpha). Note: taper rates affect dynamic scale compression, not raw responsiveness.
 
 ## FAQ
 - Replace Android auto‑brightness? Yes—turn off the system feature

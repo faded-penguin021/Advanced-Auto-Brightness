@@ -690,14 +690,14 @@ B_t = clamp(taper(B_{t-1}, T_t, r_up, r_down), B_min, B_max)
 - Flicker: increase the Reactivity dead‑zone or smoothing.
 - Flicker: increase the Reactivity dead‑zone or smoothing.
 - Flicker: increase the Reactivity dead‑zone or smoothing.
-- Too slow/fast: adjust Delta factor (dynamic alpha) and taper rates.
-- Too slow/fast: adjust Delta factor (dynamic alpha) and taper rates.
-- Too slow/fast: adjust Delta factor (dynamic alpha) and taper rates.
-- Too slow/fast: adjust Delta factor (dynamic alpha) and taper rates.
-- Too slow/fast: adjust Delta factor (dynamic alpha) and taper rates.
-- Too slow/fast: adjust Delta factor (dynamic alpha) and taper rates.
-- Too slow/fast: adjust Delta factor (dynamic alpha) and taper rates.
-- Too slow/fast: adjust Delta factor (dynamic alpha) and taper rates.
+- Too slow/fast: adjust Delta factor (dynamic alpha). Note: taper rates affect dynamic scale compression, not raw responsiveness.
+- Too slow/fast: adjust Delta factor (dynamic alpha). Note: taper rates affect dynamic scale compression, not raw responsiveness.
+- Too slow/fast: adjust Delta factor (dynamic alpha). Note: taper rates affect dynamic scale compression, not raw responsiveness.
+- Too slow/fast: adjust Delta factor (dynamic alpha). Note: taper rates affect dynamic scale compression, not raw responsiveness.
+- Too slow/fast: adjust Delta factor (dynamic alpha). Note: taper rates affect dynamic scale compression, not raw responsiveness.
+- Too slow/fast: adjust Delta factor (dynamic alpha). Note: taper rates affect dynamic scale compression, not raw responsiveness.
+- Too slow/fast: adjust Delta factor (dynamic alpha). Note: taper rates affect dynamic scale compression, not raw responsiveness.
+- Too slow/fast: adjust Delta factor (dynamic alpha). Note: taper rates affect dynamic scale compression, not raw responsiveness.
 
 
 

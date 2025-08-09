@@ -53,6 +53,48 @@ Smart, proximity-aware automatic brightness for Android via Tasker.
 - Animation and limits: Tapering and caps prevent jarring jumps and respect min/max limits for comfort.
 - Overrides and controls: A manual override switch, persistent notification, and paused/foreground states give you full control at a glance.
 
+## Technical details
+
+Notation: raw lux L(t), smoothed lux S(t), target brightness T(t), applied brightness B(t).
+
+- Sensor cadence and gating:
+  - Listens to the ambient sensor and applies accuracy gating (uses Tasker %as_accuracy); unreliable readings can be ignored unless explicitly trusted.
+  - Sampling cadence is configurable and throttled to conserve battery.
+
+- Log-domain dead‑zone (anti‑flicker):
+  - Work in log‑lux to align with human perception: x = log10(L).
+  - If |x − x_prev| < DZ(x) then treat as noise and suppress/slow the update.
+  - DZ(x) is user‑tunable via the Reactivity tab and visualized in the Reactivity graph.
+
+- Adaptive smoothing (dynamic alpha):
+  - Exponential smoothing on lux with an adaptive coefficient α that grows with the magnitude of change:
+    \[ S_t = (1 - lpha_t)\,S_{t-1} + lpha_t\,L_t \]
+  - A typical form: 
+    \[ lpha_t = \mathrm{clamp}(lpha_{min} + k\,g(|L_t - S_{t-1}|),\ lpha_{min},\ lpha_{max}) \]
+    where k is the Delta factor (see %AAB_DeltaFactor) and g is a monotonic function (e.g., log1p). Small deltas => slow, big deltas => fast.
+  - Explore behavior in the Alpha graph.
+
+- Curve mapping (lux → target brightness):
+  - Compute log‑lux z = log10(S_t). Map z through a user‑tunable curve to produce T_t in [0,1].
+  - Curve steepness (see %AAB_ScaleSteepness) controls how aggressively mid‑range lux affects brightness. Tune in the Brightness tab with the live graph.
+
+- Tapering and limits:
+  - Rate‑limit changes to avoid jarring steps and respect min/max caps: 
+    \[ B_t = \mathrm{clamp}(\mathrm{taper}(B_{t-1}, T_t, r_{up}, r_{down}),\ B_{min},\ B_{max}) \]
+
+- Proximity/state handling:
+  - Proximity detection dampens or suspends updates when the sensor is covered (e.g., pocket/ear).
+  - Initialize cleanly on display‑on; hibernate and remove timers on display‑off.
+
+- Overrides and controls:
+  - Manual override switch, persistent notification, and paused/foreground modes provide explicit control when needed.
+
+Parameters you can tune in‑app:
+- Reactivity (dead‑zone size/shape, dynamic alpha behavior)
+- Brightness curve (steepness and overall shape)
+- Limits and taper rates
+- Sensor accuracy policy and cadence
+
 
 <video controls loop muted playsinline width=640 src="https://github.com/faded-penguin021/Advanced-Auto-Brightness/raw/main/assets/demo.mp4"></video>
 <video controls loop muted playsinline width=640 src="https://github.com/faded-penguin021/Advanced-Auto-Brightness/raw/main/assets/demo.mp4"></video>

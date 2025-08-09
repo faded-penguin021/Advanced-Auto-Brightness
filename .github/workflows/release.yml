@@ -1,0 +1,22 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create GitHub Release and upload Tasker project
+        uses: softprops/action-gh-release@v2
+        with:
+          files: tasker/Advanced-Auto-Brightness.prj.xml
+          name: ${{ github.ref_name }}
+          draft: false
+          prerelease: false

@@ -16,6 +16,9 @@ Smart, proximity-aware automatic brightness for Android via Tasker.
 3. In Tasker, long-press the bottom bar → Import → select the file.
 
 ## Features
+
+Demo: https://imgur.com/a/advanced-auto-brightness-3-0-demo-VxGcnYH
+
 - Proximity-aware dimming
 - Sensor accuracy gating
 - Adjustable thresholds

@@ -26,6 +26,9 @@ A Tasker project that dynamically adjusts your Android screen brightness based o
 - `AAB_TrustUnreliable`: If On, will act even on low sensor accuracy
 
 ## Screenshots
+
+Demo: https://imgur.com/a/advanced-auto-brightness-3-0-demo-VxGcnYH
+
 Place screenshots or a demo GIF in `assets/` and reference them here.
 
 ## How it works

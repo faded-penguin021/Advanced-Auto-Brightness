@@ -1,3 +1,5 @@
+[![Deploy Pages](https://github.com/faded-penguin021/Advanced-Auto-Brightness/actions/workflows/pages.yml/badge.svg)](https://github.com/faded-penguin021/Advanced-Auto-Brightness/actions/workflows/pages.yml) [![Release](https://github.com/faded-penguin021/Advanced-Auto-Brightness/actions/workflows/release.yml/badge.svg)](https://github.com/faded-penguin021/Advanced-Auto-Brightness/actions/workflows/release.yml)
+
 # Advanced Auto Brightness
 
 A Tasker project that dynamically adjusts your Android screen brightness based on ambient light and device state for smarter, smoother lighting.

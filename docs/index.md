@@ -4,6 +4,10 @@ layout: default
 
 # Advanced Auto Brightness
 
+Author: [/u/v_uurtjevragen](https://www.reddit.com/user/v_uurtjevragen)
+Version: 3.0
+
+
 Smart, proximity-aware automatic brightness for Android via Tasker.
 
 - Website: https://faded-penguin021.github.io/Advanced-Auto-Brightness/

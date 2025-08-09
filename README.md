@@ -32,11 +32,8 @@ Helpful links: [User Guide](docs/user-guide.md) · [Discussions](https://github.
 ![Scan to download](https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fgithub.com%2Ffaded-penguin021%2FAdvanced-Auto-Brightness%2Freleases%2Flatest%2Fdownload%2FAdvanced-Auto-Brightness.prj.xml)
 
 ## Demo
-<video controls loop muted playsinline width="720">
-  <source src="https://i.imgur.com/LaTv3iX.mp4" type="video/mp4">
-  <source src="https://github.com/faded-penguin021/Advanced-Auto-Brightness/raw/main/assets/demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+
+[![Watch the video](assets/demo_thumb.jpg)](https://imgur.com/LaTv3iX)
 
 ## How it works
 - Sensor pipeline: accuracy gating (optionally trust unreliable), throttled sampling.

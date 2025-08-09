@@ -21,6 +21,9 @@ Smart, proximity-aware automatic brightness for Android via Tasker.
 
 ## Features
 
+<video controls loop muted playsinline width=640 src="https://github.com/faded-penguin021/Advanced-Auto-Brightness/raw/main/assets/demo.mp4"></video>
+
+
 Demo: https://imgur.com/a/advanced-auto-brightness-3-0-demo-VxGcnYH
 
 - Proximity-aware dimming

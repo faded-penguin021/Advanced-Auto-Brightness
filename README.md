@@ -26,18 +26,20 @@ A Tasker project that dynamically adjusts your Android screen brightness based o
 ## Download
 - Grab the latest `.prj.xml` from the [Releases](`https://github.com/faded-penguin021/Advanced-Auto-Brightness/releases`) page.
 
-## Variables & Settings
-- `AAB_ThreshAbsLow`: Minimum lux threshold to brighten
-- `AAB_ThreshAbsHigh`: Maximum lux threshold before dimming
-- `AAB_TrustUnreliable`: If On, will act even on low sensor accuracy
-
 ## Screenshots
+
+https://github.com/faded-penguin021/Advanced-Auto-Brightness/raw/main/assets/demo.gif
+
 
 Demo: https://imgur.com/a/advanced-auto-brightness-3-0-demo-VxGcnYH
 
 Place screenshots or a demo GIF in `assets/` and reference them here.
 
 ## How it works
+
+## Configure in-app (recommended)
+Use the built-in scenes to configure everything: General, Reactivity, Brightness, Misc, and About. Manual variable editing is only for advanced tweaking.
+
 Sensor events are filtered for accuracy, compared to thresholds, then brightness is adjusted smoothly to avoid flicker.
 
 ## Contributing / Updating

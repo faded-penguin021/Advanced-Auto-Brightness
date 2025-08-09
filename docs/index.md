@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Advanced Auto Brightness
+# Advanced Auto Brightness 3.0
 
 Author: [/u/v_uurtjevragen](https://www.reddit.com/user/v_uurtjevragen)
 Version: 3.0

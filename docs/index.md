@@ -27,7 +27,7 @@ Smart, proximity-aware automatic brightness for Android via Tasker.
 - Smooth adjustments to reduce flicker
 
 ## Demo
-<video controls loop muted playsinline width="720" src="https://github.com/faded-penguin021/Advanced-Auto-Brightness/raw/main/assets/demo.mp4"></video>
+<video controls loop muted playsinline width="720"><source src="https://i.imgur.com/LaTv3iX.mp4" type="video/mp4"><source src="https://github.com/faded-penguin021/Advanced-Auto-Brightness/raw/main/assets/demo.mp4" type="video/mp4"></video>
 
 ## How it works
 - Sensor pipeline: subscribes to ambient light updates, applies accuracy gating (option to trust unreliable), and throttles sampling to save battery.

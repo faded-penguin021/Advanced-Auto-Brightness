@@ -6,8 +6,6 @@
 
 **Author**: [/u/v_uurtjevragen](https://www.reddit.com/user/v_uurtjevragen)  
 **Author**: [/u/v_uurtjevragen](https://www.reddit.com/user/v_uurtjevragen)  
-**Project version**: 3.0
-**Project version**: 3.0
 
 
 
@@ -61,14 +59,12 @@ Helpful links: [User Guide](docs/user-guide.md) · [Discussions](https://github.
 ## Screenshots
 
 
-https://github.com/faded-penguin021/Advanced-Auto-Brightness/raw/main/assets/demo.gif
-https://github.com/faded-penguin021/Advanced-Auto-Brightness/raw/main/assets/demo.gif
+![Demo](https://github.com/faded-penguin021/Advanced-Auto-Brightness/raw/main/assets/demo.gif)
+![Demo](https://github.com/faded-penguin021/Advanced-Auto-Brightness/raw/main/assets/demo.gif)
 
 
 
 
-Demo: https://imgur.com/a/advanced-auto-brightness-3-0-demo-VxGcnYH
-Demo: https://imgur.com/a/advanced-auto-brightness-3-0-demo-VxGcnYH
 
 
 Place screenshots or a demo GIF in `assets/` and reference them here.
@@ -198,56 +194,3 @@ MIT. See `LICENSE`.
 - Tasker 6.6+ recommended (built/tested on 6.6.x)
 - Tasker 6.6+ recommended (built/tested on 6.6.x)
 - Android 10+ recommended (works on many versions)
-- Android 10+ recommended (works on many versions)
-- Permissions: Modify System Settings; Notification access (for controls)
-- Permissions: Modify System Settings; Notification access (for controls)
-
-
-## Troubleshooting
-## Troubleshooting
-- Brightness not changing: grant Modify System Settings in Android Settings → Apps → Tasker → Special access.
-- Brightness not changing: grant Modify System Settings in Android Settings → Apps → Tasker → Special access.
-- No sensor updates: disable battery optimizations for Tasker.
-- No sensor updates: disable battery optimizations for Tasker.
-- Flicker: increase the Reactivity dead‑zone or smoothing.
-- Flicker: increase the Reactivity dead‑zone or smoothing.
-- Too slow/fast: adjust Delta factor (dynamic alpha) and taper rates.
-- Too slow/fast: adjust Delta factor (dynamic alpha) and taper rates.
-- Stuck brightness: check that Manual Override is off in the control panel.
-- Stuck brightness: check that Manual Override is off in the control panel.
-
-
-## FAQ
-## FAQ
-- Does this replace Android auto-brightness? Yes—turn off the system feature for best results.
-- Does this replace Android auto-brightness? Yes—turn off the system feature for best results.
-- Can I keep system auto-brightness on? Not recommended; they will fight each other.
-- Can I keep system auto-brightness on? Not recommended; they will fight each other.
-- Can I tune per-app? Use Tasker profiles/contexts as you like; AAB exposes controls and states you can combine.
-- Can I tune per-app? Use Tasker profiles/contexts as you like; AAB exposes controls and states you can combine.
-- How do I revert? Toggle the master switch or remove the project from Tasker.
-- How do I revert? Toggle the master switch or remove the project from Tasker.
-
-
-
-
-## Privacy
-## Privacy
-- No analytics, accounts, or network connectivity required.
-- No analytics, accounts, or network connectivity required.
-- All processing happens on-device in Tasker; nothing is uploaded.
-- All processing happens on-device in Tasker; nothing is uploaded.
-- You control permissions and can disable the project at any time.
-- You control permissions and can disable the project at any time.
-
-
-## Known limitations
-## Known limitations
-- Brightness control APIs differ across OEMs/Android versions; some devices may clamp min/max.
-- Brightness control APIs differ across OEMs/Android versions; some devices may clamp min/max.
-- Sensor accuracy and cadence vary by device; tune Reactivity and Alpha accordingly.
-- Sensor accuracy and cadence vary by device; tune Reactivity and Alpha accordingly.
-- If system auto-brightness is left on, it may conflict with AAB—turn it off.
-- If system auto-brightness is left on, it may conflict with AAB—turn it off.
-
-

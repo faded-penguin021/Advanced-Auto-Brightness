@@ -318,22 +318,22 @@ Smart, proximity-aware automatic brightness for Android via Tasker.
 2. Download the `.prj.xml` above.
 2. Download the `.prj.xml` above.
 2. Download the `.prj.xml` above.
-3. In Tasker, long-press the bottom bar → Import → select the file.
-3. In Tasker, long-press the bottom bar → Import → select the file.
-3. In Tasker, long-press the bottom bar → Import → select the file.
-3. In Tasker, long-press the bottom bar → Import → select the file.
-3. In Tasker, long-press the bottom bar → Import → select the file.
-3. In Tasker, long-press the bottom bar → Import → select the file.
-3. In Tasker, long-press the bottom bar → Import → select the file.
-3. In Tasker, long-press the bottom bar → Import → select the file.
-3. In Tasker, long-press the bottom bar → Import → select the file.
-3. In Tasker, long-press the bottom bar → Import → select the file.
-3. In Tasker, long-press the bottom bar → Import → select the file.
-3. In Tasker, long-press the bottom bar → Import → select the file.
-3. In Tasker, long-press the bottom bar → Import → select the file.
-3. In Tasker, long-press the bottom bar → Import → select the file.
-3. In Tasker, long-press the bottom bar → Import → select the file.
-3. In Tasker, long-press the bottom bar → Import → select the file.
+3. In Tasker, long‑press the home icon (bottom left) → Import Project.
+3. In Tasker, long‑press the home icon (bottom left) → Import Project.
+3. In Tasker, long‑press the home icon (bottom left) → Import Project.
+3. In Tasker, long‑press the home icon (bottom left) → Import Project.
+3. In Tasker, long‑press the home icon (bottom left) → Import Project.
+3. In Tasker, long‑press the home icon (bottom left) → Import Project.
+3. In Tasker, long‑press the home icon (bottom left) → Import Project.
+3. In Tasker, long‑press the home icon (bottom left) → Import Project.
+3. In Tasker, long‑press the home icon (bottom left) → Import Project.
+3. In Tasker, long‑press the home icon (bottom left) → Import Project.
+3. In Tasker, long‑press the home icon (bottom left) → Import Project.
+3. In Tasker, long‑press the home icon (bottom left) → Import Project.
+3. In Tasker, long‑press the home icon (bottom left) → Import Project.
+3. In Tasker, long‑press the home icon (bottom left) → Import Project.
+3. In Tasker, long‑press the home icon (bottom left) → Import Project.
+3. In Tasker, long‑press the home icon (bottom left) → Import Project.
 
 
 

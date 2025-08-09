@@ -46,8 +46,8 @@ Helpful links: [User Guide](docs/user-guide.md) · [Discussions](https://github.
 1. Install Tasker (`https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm`).
 2. Download the latest release from the Releases page.
 2. Download the latest release from the Releases page.
-3. In Tasker: long‑press the bottom bar → Import → choose the `.prj.xml`.
-3. In Tasker: long‑press the bottom bar → Import → choose the `.prj.xml`.
+3. In Tasker: long‑press the home icon (bottom left) → Import Project.`.prj.xml`.
+3. In Tasker: long‑press the home icon (bottom left) → Import Project.`.prj.xml`.
 4. Configure via the in‑app scenes (General, Reactivity, Brightness, Misc).
 4. Configure via the in‑app scenes (General, Reactivity, Brightness, Misc).
 

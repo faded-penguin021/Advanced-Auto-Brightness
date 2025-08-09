@@ -1,0 +1,34 @@
+name: Bug report
+description: File a bug report
+labels: [bug]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect to happen?
+    validations:
+      required: true
+  - type: input
+    id: tasker-version
+    attributes:
+      label: Tasker version
+      placeholder: 6.6.x
+    validations:
+      required: true
+  - type: input
+    id: android-version
+    attributes:
+      label: Android version
+      placeholder: 14
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Steps to reproduce
+      render: bash
+  - type: textarea
+    id: extras
+    attributes:
+      label: Extras (screenshots, screen recording)

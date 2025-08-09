@@ -120,3 +120,22 @@ Demo: https://imgur.com/a/advanced-auto-brightness-3-0-demo-VxGcnYH
 ## Updating
 Replace `tasker/Advanced-Auto-Brightness.prj.xml` in the repo and push a tag like `v0.1.1` to publish a new release.
 Replace `tasker/Advanced-Auto-Brightness.prj.xml` in the repo and push a tag like `v0.1.1` to publish a new release.
+
+## Requirements
+- Tasker 6.6+ recommended (built/tested on 6.6.x)
+- Android 10+ recommended (works on many versions)
+- Permissions: Modify System Settings; Notification access (for controls)
+
+## Troubleshooting
+- Brightness not changing: grant Modify System Settings in Android Settings → Apps → Tasker → Special access.
+- No sensor updates: disable battery optimizations for Tasker.
+- Flicker: increase the Reactivity dead‑zone or smoothing.
+- Too slow/fast: adjust Delta factor (dynamic alpha) and taper rates.
+- Stuck brightness: check that Manual Override is off in the control panel.
+
+## FAQ
+- Does this replace Android auto-brightness? Yes—turn off the system feature for best results.
+- Can I keep system auto-brightness on? Not recommended; they will fight each other.
+- Can I tune per-app? Use Tasker profiles/contexts as you like; AAB exposes controls and states you can combine.
+- How do I revert? Toggle the master switch or remove the project from Tasker.
+

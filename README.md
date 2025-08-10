@@ -73,4 +73,4 @@ MIT. See `LICENSE`.
 
 ## Requirements
 - Tasker 6.6.2‑beta+ for sunrise/sunset actions (join beta via Play Store → “Join the beta”) · Reddit info: https://www.reddit.com/r/tasker/comments/1lulpiq/dev_tasker_662beta_shizuku_integration/
-- Tasker 6.6+ and Android 10+ recommended; Permissions: Modify System Settings; Notification access; Display over other apps (System Alert Window)
+- Tasker 6.6+ and Android 10+ recommended; Permissions: Modify System Settings; Notification access; Display over other apps

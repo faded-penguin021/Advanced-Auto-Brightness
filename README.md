@@ -5,26 +5,24 @@
 
 # Advanced Auto Brightness 3.0
 
-A Tasker project that dynamically adjusts Android screen brightness based on ambient light and device state for smoother, smarter lighting.
+A Tasker‑only replacement for Android auto‑brightness.
 
-> Important: Requires Tasker 6.6.2‑beta or newer. On older Tasker, import will fail with “Unknown Action: Get Sunrise/Sunset.” See Requirements for beta opt‑in.
+> Requires Tasker 6.6.2‑beta or newer. Older versions fail to import with “Unknown Action: Get Sunrise/Sunset.”
 
 ## Features
-- Proximity‑aware dimming
-- Sensor accuracy gating
-- Adjustable lux→brightness curve (live graph)
-- Dynamic dead‑zone to eliminate flicker
-- Adaptive smoothing (dynamic alpha) with tapered animations
-- Foreground controls and battery‑friendly cadence
-- Circadian scaling (sunrise/sunset) for day/evening tone
+- Plugin‑free engine (Tasker‑only)
+- Proximity‑aware (no changes in pocket/at ear)
+- Dynamic dead‑zone + adaptive smoothing (no flicker)
+- Circadian scaling (sunrise/sunset adjusts tone)
+- Manual override + foreground controls
+- Watchdog throttle (recovers if idle)
 
 ## Quick Start
 Helpful links: [User Guide](docs/user-guide.md) · [Discussions](https://github.com/faded-penguin021/Advanced-Auto-Brightness/discussions) · [Releases](https://github.com/faded-penguin021/Advanced-Auto-Brightness/releases)
 
-1. Install Tasker (`https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm`).
-2. Download the latest release from the Releases page.
+1. Install Tasker.
+2. Download the latest release.
 3. In Tasker: long‑press the home icon (bottom left) → Import Project.
-4. Configure via the in‑app scenes (General, Reactivity, Brightness, Misc).
 
 ## Download
 - Latest `.prj.xml`: see [Releases](https://github.com/faded-penguin021/Advanced-Auto-Brightness/releases)
@@ -33,74 +31,38 @@ Helpful links: [User Guide](docs/user-guide.md) · [Discussions](https://github.
 ![Scan to download](https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fgithub.com%2Ffaded-penguin021%2FAdvanced-Auto-Brightness%2Freleases%2Flatest%2Fdownload%2FAdvanced-Auto-Brightness.prj.xml)
 
 ## Demo
-
 <a href="https://imgur.com/LaTv3iX"><img src="assets/demo_thumb.jpg" alt="Watch the video" width="480" style="max-width:100%; height:auto;"></a>
 
 ## How it works
-- Sensor pipeline: accuracy gating (optionally trust unreliable), throttled sampling.
-- Proximity‑aware: dampens/blocks when covered; clean init on display‑on, hibernate on display‑off.
-- Curve mapping: configurable lux→target brightness with live preview.
-- Dynamic dead‑zone: log‑scale jitter suppression.
-- Adaptive smoothing: dynamic alpha; small deltas slow, big deltas fast; tapered animations.
-- Controls: manual override, persistent notification, paused/foreground states.
-- Watchdog throttle: recovers monitoring if idle for too long
-- Circadian scaling engine: tweaks the curve by solar events (sunrise/sunset).
-
+- Event‑driven monitor: reacts only when light change exits a dynamic dead‑zone
+- Smoothing: adaptive alpha (big changes fast; small changes slow)
+- Curve mapping: three zones (dark/indoor/bright) → clamped to min/max
+- State machine: Initialize on screen‑on; Hibernate on screen‑off
+- Proximity gate: pause/dampen while covered
+- Manual override: respects user slider; resume via notification
+- Watchdog: resets throttle if system goes idle
+- Circadian scaling: tweaks curve by solar events (sunrise/sunset)
 
 ## Technical details
-Project variables are namespaced as `AAB_*`.
-Notation: raw lux L(t), smoothed lux S(t), target brightness T(t), applied brightness B(t).
+- Variables are namespaced as `AAB_*` (e.g., `%AAB_MinBright`) to avoid conflicts
 
-- Sensor cadence and gating
-  - Uses `%as_accuracy`; unreliable readings ignored unless trusted.
-  - Sampling cadence is configurable and battery‑friendly.
+## Profile map
+- Initialize (screen‑on) → set & start
+- Hibernate (screen‑off) → stop & clear
+- Monitor Ambient Light → dead‑zone filtered events
+- Proximity Detection → near/far gating
+- Manual Override → pause/resume service
+- Dynamic Scale Engine → sunrise/sunset curve scaling
 
-- Dead‑zone (log domain)
-  - x = log10(L). If |x − x_prev| < DZ(x) then treat as noise.
-
-- Adaptive smoothing
-```
-S_t = (1 - alpha_t) * S_{t-1} + alpha_t * L_t
-alpha_t = clamp(alpha_min + k * g(|L_t - S_{t-1}|), alpha_min, alpha_max)
-```
-  - k is the Delta factor; g is monotonic (e.g., log1p).
-
-- Curve and limits
-```
-B_t = clamp(taper(B_{t-1}, T_t, r_up, r_down), B_min, B_max)
-```
-
-## Contributing / Updating
-- Replace `tasker/Advanced-Auto-Brightness.prj.xml` with your export.
-- Add screenshots/video under `assets/`.
-- Tag a version like `v3.0.1` to publish a release (artifacts upload automatically).
+## Troubleshooting
+- “Unknown Action: Get Sunrise/Sunset” → update Tasker to 6.6.2‑beta+
+- Too slow/fast → adjust Delta factor (dynamic alpha). Taper rates don’t change responsiveness
+- Flicker → increase dead‑zone or smoothing
+- No changes → grant Modify System Settings; disable battery optimizations
 
 ## License
 MIT. See `LICENSE`.
 
 ## Requirements
-- Tasker 6.6.2‑beta+ for circadian (Sunrise/Sunset) actions
-- Join beta via the [Play Store page](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm) → “Join the beta”
-- Direct beta info: Reddit: https://www.reddit.com/r/tasker/comments/1lulpiq/dev_tasker_662beta_shizuku_integration/
-- Without beta: project imports, but circadian engine won’t be available
-- Tasker 6.6+ recommended; Android 10+ recommended
-- Permissions: Modify System Settings; Notification access
-
-## Troubleshooting
-- Import fails: update to Tasker 6.6.2‑beta (Unknown Action: Get Sunrise/Sunset)
-- Brightness not changing: grant Modify System Settings (Android Settings → Apps → Tasker → Special access)
-- No sensor updates: disable battery optimizations for Tasker
-- Flicker: increase Reactivity dead‑zone or smoothing
-- Too slow/fast: adjust Delta factor (dynamic alpha). Note: taper rates affect dynamic scale compression, not raw responsiveness.
-
-## FAQ
-- Replace Android auto‑brightness? Yes—turn off the system feature
-- Keep system auto‑brightness on? Not recommended; they will fight
-- Per‑app tuning? Use Tasker profiles/contexts with AAB controls
-
-## Privacy
-- No analytics or network; all processing on‑device
-
-## Known limitations
-- OEM/Android min/max clamps vary by device
-- Sensor cadence/accuracy varies; tune Reactivity/Alpha accordingly
+- Tasker 6.6.2‑beta+ for sunrise/sunset actions (join beta via Play Store → “Join the beta”) · Reddit info: https://www.reddit.com/r/tasker/comments/1lulpiq/dev_tasker_662beta_shizuku_integration/
+- Tasker 6.6+ and Android 10+ recommended; Permissions: Modify System Settings; Notification access

@@ -33,7 +33,7 @@ Helpful links: [User Guide](docs/user-guide.md) · [Discussions](https://github.
 
 ## Demo
 
-<a href="https://imgur.com/LaTv3iX"><img src="assets/demo_thumb.jpg" alt="Watch the video" width="720" style="max-width:100%; height:auto;"></a>
+<a href="https://imgur.com/LaTv3iX"><img src="assets/demo_thumb.jpg" alt="Watch the video" width="480" style="max-width:100%; height:auto;"></a>
 
 ## How it works
 - Sensor pipeline: accuracy gating (optionally trust unreliable), throttled sampling.

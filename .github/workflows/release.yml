@@ -15,17 +15,26 @@ jobs:
       - uses: actions/checkout@v4
       - name: Package artifacts
         run: |
+          set -euo pipefail
+          APK_SRC=$(ls tasker/*.apk 2>/dev/null | head -n 1 || true)
+          if [ -n "$APK_SRC" ]; then
+            cp "$APK_SRC" Advanced-Auto-Brightness.apk
+          fi
           cd tasker
           zip -9 ../Advanced-Auto-Brightness.prj.zip Advanced-Auto-Brightness.prj.xml
           cd ..
           sha256sum tasker/Advanced-Auto-Brightness.prj.xml > SHA256SUMS.txt
           sha256sum Advanced-Auto-Brightness.prj.zip >> SHA256SUMS.txt
+          if [ -f Advanced-Auto-Brightness.apk ]; then
+            sha256sum Advanced-Auto-Brightness.apk >> SHA256SUMS.txt
+          fi
       - name: Create GitHub Release and upload Tasker project
         uses: softprops/action-gh-release@v2
         with:
           files: |
             tasker/Advanced-Auto-Brightness.prj.xml
             Advanced-Auto-Brightness.prj.zip
+            Advanced-Auto-Brightness.apk
             SHA256SUMS.txt
           name: ${{ github.ref_name }}
           draft: false

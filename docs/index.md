@@ -30,7 +30,8 @@ Smart, proximity‑aware automatic brightness for Android via Tasker.
 
 ## Demo
 
-[![Watch the video](assets/demo_thumb.jpg)](https://imgur.com/LaTv3iX)
+<a href="https://imgur.com/LaTv3iX"><img src="assets/demo_thumb.jpg" alt="Watch the video" width="720" style="max-width:100%; height:auto;"></a>
+
 ## How it works
 - Sensor pipeline: accuracy gating (optionally trust unreliable), throttled sampling.
 - Proximity‑aware: dampens/blocks when covered; clean init on display‑on, hibernate on display‑off.

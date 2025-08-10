@@ -59,10 +59,12 @@ Plugin‑free Tasker project replacing Android auto‑brightness.
 - Direct links: [App APK](https://github.com/faded-penguin021/Advanced-Auto-Brightness/releases/latest/download/Advanced-Auto-Brightness.apk) · [Project file](https://github.com/faded-penguin021/Advanced-Auto-Brightness/releases/latest/download/Advanced-Auto-Brightness.prj.xml)
 
 ## Requirements
+- Permissions: Modify System Settings; Notification access; Display over other apps (System Alert Window)
 - Tasker 6.6.2‑beta+ for sunrise/sunset actions (join beta via Play Store → “Join the beta”) · Reddit: https://www.reddit.com/r/tasker/comments/1lulpiq/dev_tasker_662beta_shizuku_integration/
 - Without the beta, the project imports but the circadian engine won’t be available
 
 ## Troubleshooting
+- Scenes or overlays not visible: enable "Display over other apps" for the app
 - Brightness not changing: grant Modify System Settings · disable battery optimizations
 - Flicker: increase the Reactivity dead‑zone or smoothing
 - Too slow/fast: adjust Delta factor (dynamic alpha). 

@@ -62,6 +62,7 @@ Helpful links: [User Guide](docs/user-guide.md) · [Discussions](https://github.
 - Dynamic Scale Engine → sunrise/sunset curve scaling
 
 ## Troubleshooting
+- Scenes or overlays not visible: enable "Display over other apps" for Tasker or the standalone app
 - “Unknown Action: Get Sunrise/Sunset” → update Tasker to 6.6.2‑beta+
 - Too slow/fast → adjust Delta factor (dynamic alpha). 
 - Flicker → increase dead‑zone or smoothing
@@ -72,4 +73,4 @@ MIT. See `LICENSE`.
 
 ## Requirements
 - Tasker 6.6.2‑beta+ for sunrise/sunset actions (join beta via Play Store → “Join the beta”) · Reddit info: https://www.reddit.com/r/tasker/comments/1lulpiq/dev_tasker_662beta_shizuku_integration/
-- Tasker 6.6+ and Android 10+ recommended; Permissions: Modify System Settings; Notification access
+- Tasker 6.6+ and Android 10+ recommended; Permissions: Modify System Settings; Notification access; Display over other apps (System Alert Window)

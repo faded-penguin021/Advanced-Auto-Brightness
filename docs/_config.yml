@@ -1,8 +1,9 @@
 remote_theme: pages-themes/cayman@v0
 plugins:
   - jekyll-sitemap
-  - jekyll-sitemap
   - jekyll-remote-theme
+  - jekyll-seo-tag
 title: Advanced Auto Brightness
 description: A Tasker project that dynamically adjusts Android screen brightness.
 show_downloads: true
+logo: /assets/demo_thumb.jpg

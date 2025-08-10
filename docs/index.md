@@ -4,6 +4,9 @@ layout: default
 
 # Advanced Auto Brightness 3.0
 
+{% seo %}
+
+
 Links: [User Guide](./user-guide.html) · [Releases](https://github.com/faded-penguin021/Advanced-Auto-Brightness/releases) · [Discussions](https://github.com/faded-penguin021/Advanced-Auto-Brightness/discussions)
 
 Author: [/u/v_uurtjevragen](https://www.reddit.com/user/v_uurtjevragen) · Version: 3.0

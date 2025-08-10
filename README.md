@@ -5,13 +5,13 @@
 
 # Advanced Auto Brightness 3.0
 
-A Tasker‑only replacement for Android auto‑brightness.
+Plugin‑free Tasker project replacing Android auto‑brightness.
 
 > Requires Tasker 6.6.2‑beta or newer. Older versions fail to import with “Unknown Action: Get Sunrise/Sunset.”
 
 ## Features
 - Plugin‑free engine (Tasker‑only)
-- Proximity‑aware (no changes in pocket/at ear)
+- Proximity‑aware
 - Dynamic dead‑zone + adaptive smoothing (no flicker)
 - Circadian scaling (sunrise/sunset adjusts tone)
 - Manual override + foreground controls

@@ -8,7 +8,7 @@ Links: [User Guide](./user-guide.html) · [Releases](https://github.com/faded-pe
 
 Author: [/u/v_uurtjevragen](https://www.reddit.com/user/v_uurtjevragen) · Version: 3.0
 
-A Tasker‑only replacement for Android auto‑brightness.
+Plugin‑free Tasker project replacing Android auto‑brightness.
 
 - Website: https://faded-penguin021.github.io/Advanced-Auto-Brightness/
 - Repo: https://github.com/faded-penguin021/Advanced-Auto-Brightness
@@ -23,7 +23,7 @@ A Tasker‑only replacement for Android auto‑brightness.
 
 ## Features
 - Plugin‑free engine (Tasker‑only)
-- Proximity‑aware (no changes in pocket/at ear)
+- Proximity‑aware
 - Dynamic dead‑zone + adaptive smoothing (no flicker)
 - Circadian scaling (sunrise/sunset adjusts tone)
 - Manual override + foreground controls

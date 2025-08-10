@@ -36,7 +36,9 @@ Helpful links: [User Guide](docs/user-guide.md) · [Discussions](https://github.
 - Direct links: [App APK](https://github.com/faded-penguin021/Advanced-Auto-Brightness/releases/latest/download/Advanced-Auto-Brightness.apk) · [Project file](https://github.com/faded-penguin021/Advanced-Auto-Brightness/releases/latest/download/Advanced-Auto-Brightness.prj.xml)
 
 ## Demo
-<a href="https://imgur.com/LaTv3iX"><img src="assets/demo_thumb.jpg" alt="Watch the video" width="480" style="max-width:100%; height:auto;"></a>
+<a href="https://imgur.com/LaTv3iX"><img src="assets/demo_thumb.jpg" alt="Watch the video (click)" width="480" style="max-width:100%; height:auto;"></a>
+
+▶ Click to watch on Imgur
 
 ## How it works
 - Event‑driven monitor: reacts only when light change exits a dynamic dead‑zone
@@ -61,7 +63,7 @@ Helpful links: [User Guide](docs/user-guide.md) · [Discussions](https://github.
 
 ## Troubleshooting
 - “Unknown Action: Get Sunrise/Sunset” → update Tasker to 6.6.2‑beta+
-- Too slow/fast → adjust Delta factor (dynamic alpha). Taper rates don’t change responsiveness
+- Too slow/fast → adjust Delta factor (dynamic alpha). 
 - Flicker → increase dead‑zone or smoothing
 - No changes → grant Modify System Settings; disable battery optimizations
 

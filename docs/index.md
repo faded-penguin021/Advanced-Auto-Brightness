@@ -30,7 +30,9 @@ A Tasker‑only replacement for Android auto‑brightness.
 - Watchdog throttle (recovers if idle)
 
 ## Demo
-<a href="https://imgur.com/LaTv3iX"><img src="assets/demo_thumb.jpg" alt="Watch the video" width="480" style="max-width:100%; height:auto;"></a>
+<a href="https://imgur.com/LaTv3iX"><img src="assets/demo_thumb.jpg" alt="Watch the video (click)" width="480" style="max-width:100%; height:auto;"></a>
+
+▶ Click to watch on Imgur
 
 ## How it works
 - Event‑driven monitor: reacts only when light change exits a dynamic dead‑zone
@@ -63,7 +65,7 @@ A Tasker‑only replacement for Android auto‑brightness.
 ## Troubleshooting
 - Brightness not changing: grant Modify System Settings · disable battery optimizations
 - Flicker: increase the Reactivity dead‑zone or smoothing
-- Too slow/fast: adjust Delta factor (dynamic alpha). Taper rates don’t change responsiveness
+- Too slow/fast: adjust Delta factor (dynamic alpha). 
 
 ## Updating
 Replace `tasker/Advanced-Auto-Brightness.prj.xml` and push a tag like `v3.0.1` to publish a release.

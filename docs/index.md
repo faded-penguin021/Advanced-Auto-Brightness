@@ -27,6 +27,7 @@ Smart, proximity‑aware automatic brightness for Android via Tasker.
 - Sensor accuracy gating
 - Adjustable thresholds
 - Smooth adjustments to reduce flicker
+- Circadian scaling (sunrise/sunset) for day/evening tone
 
 ## Demo
 
@@ -39,6 +40,9 @@ Smart, proximity‑aware automatic brightness for Android via Tasker.
 - Dynamic dead‑zone: log‑scale jitter suppression.
 - Adaptive smoothing (dynamic alpha): fast for big deltas, slow for small; tapered animations.
 - Controls: manual override, persistent notification, paused/foreground states.
+- Watchdog throttle: recovers monitoring if idle for too long
+- Circadian scaling engine: tweaks the curve by solar events (sunrise/sunset).
+
 
 ## Technical details
 Notation: raw lux L(t), smoothed lux S(t), target brightness T(t), applied brightness B(t).

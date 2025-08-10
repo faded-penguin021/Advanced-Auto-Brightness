@@ -16,6 +16,7 @@ A Tasker project that dynamically adjusts Android screen brightness based on amb
 - Dynamic dead‑zone to eliminate flicker
 - Adaptive smoothing (dynamic alpha) with tapered animations
 - Foreground controls and battery‑friendly cadence
+- Circadian scaling (sunrise/sunset) for day/evening tone
 
 ## Quick Start
 Helpful links: [User Guide](docs/user-guide.md) · [Discussions](https://github.com/faded-penguin021/Advanced-Auto-Brightness/discussions) · [Releases](https://github.com/faded-penguin021/Advanced-Auto-Brightness/releases)
@@ -42,8 +43,12 @@ Helpful links: [User Guide](docs/user-guide.md) · [Discussions](https://github.
 - Dynamic dead‑zone: log‑scale jitter suppression.
 - Adaptive smoothing: dynamic alpha; small deltas slow, big deltas fast; tapered animations.
 - Controls: manual override, persistent notification, paused/foreground states.
+- Watchdog throttle: recovers monitoring if idle for too long
+- Circadian scaling engine: tweaks the curve by solar events (sunrise/sunset).
+
 
 ## Technical details
+Project variables are namespaced as `AAB_*`.
 Notation: raw lux L(t), smoothed lux S(t), target brightness T(t), applied brightness B(t).
 
 - Sensor cadence and gating

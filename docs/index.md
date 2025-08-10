@@ -46,6 +46,10 @@ A Tasker‑only replacement for Android auto‑brightness.
 - Variables are namespaced as `AAB_*` to avoid conflicts
 
 ## Download
+- Standalone app (no Tasker required): Advanced-Auto-Brightness.apk in Releases
+
+### Scan to download the app
+![Scan to download app](https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fgithub.com%2Ffaded-penguin021%2FAdvanced-Auto-Brightness%2Freleases%2Flatest%2Fdownload%2FAdvanced-Auto-Brightness.apk)
 - Latest `.prj.xml`: link above
 
 ### Scan to download

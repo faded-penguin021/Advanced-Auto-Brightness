@@ -33,9 +33,11 @@ Plugin‑free Tasker project replacing Android auto‑brightness.
 - Watchdog throttle (recovers if idle)
 
 ## Demo
-<a href="https://imgur.com/LaTv3iX"><img src="assets/demo_thumb.jpg" alt="Watch the video (click)" width="480" style="max-width:100%; height:auto;"></a>
+<video src="assets/aab-demo.mp4" controls poster="assets/demo_thumb.jpg" width="640" style="max-width:100%; height:auto;">
+  Sorry, your browser doesn't support embedded videos. You can watch it here: <a href="assets/aab-demo.mp4">assets/aab-demo.mp4</a>.
+</video>
 
-▶ Click to watch on Imgur
+Note: This demo video was created by NotebookLM via AI.
 
 ## How it works
 - Event‑driven monitor: reacts only when light change exits a dynamic dead‑zone

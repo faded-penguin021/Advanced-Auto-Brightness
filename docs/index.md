@@ -36,8 +36,12 @@ Plugin‑free Tasker project replacing Android auto‑brightness.
 <strong>Original demo (human‑made)</strong>
 <video src="assets/demo.mp4" controls poster="assets/demo_thumb.jpg" width="640" style="max-width:100%; height:auto;"></video>
 
+Shows the screen adapting smoothly to changing ambient light without flicker, thanks to adaptive smoothing and a dynamic dead‑zone.
+
 <strong>New demo (AI‑generated)</strong>
 <video src="assets/aab-demo.mp4" controls poster="assets/demo_thumb.jpg" width="640" style="max-width:100%; height:auto;"></video>
+
+Overview of the core features and tuning workflow, including proximity gating, circadian scaling, and manual override.
 
 Note: The new demo video was created by NotebookLM via AI.
 

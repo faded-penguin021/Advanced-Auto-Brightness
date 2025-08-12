@@ -1,7 +1,7 @@
 [![Deploy Pages](https://github.com/faded-penguin021/Advanced-Auto-Brightness/actions/workflows/pages.yml/badge.svg)](https://github.com/faded-penguin021/Advanced-Auto-Brightness/actions/workflows/pages.yml) [![Release](https://github.com/faded-penguin021/Advanced-Auto-Brightness/actions/workflows/release.yml/badge.svg)](https://github.com/faded-penguin021/Advanced-Auto-Brightness/actions/workflows/release.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) [![Latest release](https://img.shields.io/github/v/release/faded-penguin021/Advanced-Auto-Brightness)](https://github.com/faded-penguin021/Advanced-Auto-Brightness/releases) [![Downloads](https://img.shields.io/github/downloads/faded-penguin021/Advanced-Auto-Brightness/total.svg)](https://github.com/faded-penguin021/Advanced-Auto-Brightness/releases)
 
 **Author**: [/u/v_uurtjevragen](https://www.reddit.com/user/v_uurtjevragen)
-**Project version**: 3.0.68
+**Project version**: 3.0.1
 
 # Advanced Auto Brightness
 
@@ -9,7 +9,7 @@ Plugin‑free Tasker project replacing Android auto‑brightness.
 
 > Requires Tasker 6.6.2‑beta or newer. Older versions fail to import with “Unknown Action: Get Sunrise/Sunset.”
 
-## What's new in 3.0.68
+## What's new in 3.0.1
 - Dynamic Scale Engine (circadian scaling): refined algorithm and fixes for smoother, more consistent day/night tone transitions.
 - “No Sunrise” variant: unchanged.
 

@@ -3,7 +3,7 @@
 **Author**: [/u/v_uurtjevragen](https://www.reddit.com/user/v_uurtjevragen)
 **Project version**: 3.0.68
 
-# Advanced Auto Brightness 3.0.68
+# Advanced Auto Brightness
 
 Plugin‑free Tasker project replacing Android auto‑brightness.
 

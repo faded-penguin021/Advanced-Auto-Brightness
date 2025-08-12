@@ -35,11 +35,11 @@ Helpful links: [User Guide](docs/user-guide.md) · [Discussions](https://github.
 
 - Direct links: [App APK](https://github.com/faded-penguin021/Advanced-Auto-Brightness/releases/latest/download/Advanced-Auto-Brightness.apk) · [Project file](https://github.com/faded-penguin021/Advanced-Auto-Brightness/releases/latest/download/Advanced-Auto-Brightness.prj.xml)
 
-## Demo
+## Demo and overview
 - Original demo (human‑made): [docs/assets/demo.mp4](docs/assets/demo.mp4) — Smooth adaptation to changing light without flicker via dynamic dead‑zone and adaptive smoothing.
-- New demo (AI‑generated): [docs/assets/aab-demo.mp4](docs/assets/aab-demo.mp4) — Overview of features and tuning flow: proximity gating, circadian scaling, manual override.
+- High‑level overview (AI‑generated): [docs/assets/aab-demo.mp4](docs/assets/aab-demo.mp4) — Project goals, core features, and the tuning workflow at a glance.
 
-Note: The new demo video was created by NotebookLM via AI.
+Note: The overview video was created by NotebookLM via AI.
 
 ## How it works
 - Event‑driven monitor: reacts only when light change exits a dynamic dead‑zone

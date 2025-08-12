@@ -38,12 +38,12 @@ Plugin‑free Tasker project replacing Android auto‑brightness.
 
 Shows the screen adapting smoothly to changing ambient light without flicker, thanks to adaptive smoothing and a dynamic dead‑zone.
 
-<strong>New demo (AI‑generated)</strong>
+## High‑level overview (AI‑generated)
 <video src="assets/aab-demo.mp4" controls poster="assets/demo_thumb.jpg" width="640" style="max-width:100%; height:auto;"></video>
 
-Overview of the core features and tuning workflow, including proximity gating, circadian scaling, and manual override.
+Explains the project at a high level: goals, core features, and how the tuning workflow fits together.
 
-Note: The new demo video was created by NotebookLM via AI.
+Note: This overview video was created by NotebookLM via AI.
 
 ## How it works
 - Event‑driven monitor: reacts only when light change exits a dynamic dead‑zone

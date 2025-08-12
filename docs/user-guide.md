@@ -47,5 +47,6 @@ Minor sensor noise can cause jitter. Use a dead‑zone so the screen reacts only
 Enjoy your new intelligent auto brightness!
 
 ## Media
-- Demo video: `assets/aab-demo.mp4`
-- Attribution: The demo video was created by NotebookLM via AI.
+- Demo (human‑made): `assets/demo.mp4` — Real‑world example showing smooth, flicker‑free adaptation.
+- High‑level overview (AI‑generated): `assets/aab-demo.mp4` — Project goals, core features, and tuning workflow.
+- Attribution: The overview video was created by NotebookLM via AI.

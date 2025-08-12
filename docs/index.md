@@ -63,15 +63,15 @@ Note: This overview video was created by NotebookLM via AI.
 - Variables are namespaced as `AAB_*` to avoid conflicts
 
 ## Download
-- Standalone app (no Tasker required): Advanced-Auto-Brightness.apk in Releases
+- Standalone app (no Tasker required): Advanced-Auto-Brightness.apk in Releases — No Sunrise build
 
 > Note: In the standalone app build (Tasker App Factory), sunrise/sunset (circadian scaling) is unavailable; the feature is off and hidden by default.
 
-| APK (no Tasker) | Tasker project (.prj.xml) |
+| APK (No Sunrise build) | Tasker project (.prj.xml) |
 | --- | --- |
-| <a href="https://github.com/faded-penguin021/Advanced-Auto-Brightness/releases/latest/download/Advanced-Auto-Brightness.apk"><img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fgithub.com%2Ffaded-penguin021%2FAdvanced-Auto-Brightness%2Freleases%2Flatest%2Fdownload%2FAdvanced-Auto-Brightness.apk" alt="Scan APK" width="240" height="240" style="width:240px;height:240px;"></a> | <a href="https://github.com/faded-penguin021/Advanced-Auto-Brightness/releases/latest/download/Advanced-Auto-Brightness.prj.xml"><img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fgithub.com%2Ffaded-penguin021%2FAdvanced-Auto-Brightness%2Freleases%2Flatest%2Fdownload%2FAdvanced-Auto-Brightness.prj.xml" alt="Scan project" width="240" height="240" style="width:240px;height:240px;"></a> |
+| <a href="https://github.com/faded-penguin021/Advanced-Auto-Brightness/releases/latest/download/Advanced-Auto-Brightness.apk"><img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fgithub.com%2Ffaded-penguin021%2FAdvanced-Auto-Brightness%2Freleases%2Flatest%2Fdownload%2FAdvanced-Auto-Brightness.apk" alt="Scan APK (No Sunrise build)" width="240" height="240" style="width:240px;height:240px;"></a> | <a href="https://github.com/faded-penguin021/Advanced-Auto-Brightness/releases/latest/download/Advanced-Auto-Brightness.prj.xml"><img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fgithub.com%2Ffaded-penguin021%2FAdvanced-Auto-Brightness%2Freleases%2Flatest%2Fdownload%2FAdvanced-Auto-Brightness.prj.xml" alt="Scan project" width="240" height="240" style="width:240px;height:240px;"></a> |
 
-- Direct links: [App APK](https://github.com/faded-penguin021/Advanced-Auto-Brightness/releases/latest/download/Advanced-Auto-Brightness.apk) · [Project file](https://github.com/faded-penguin021/Advanced-Auto-Brightness/releases/latest/download/Advanced-Auto-Brightness.prj.xml)
+- Direct links: [App APK (No Sunrise build)](https://github.com/faded-penguin021/Advanced-Auto-Brightness/releases/latest/download/Advanced-Auto-Brightness.apk) · [Project file](https://github.com/faded-penguin021/Advanced-Auto-Brightness/releases/latest/download/Advanced-Auto-Brightness.prj.xml)
 
 ## Requirements
 - Permissions: Modify System Settings; Notification access; Display over other apps

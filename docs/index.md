@@ -2,14 +2,14 @@
 layout: default
 ---
 
-# Advanced Auto Brightness 3.0
+# Advanced Auto Brightness 3.0.68
 
 {% seo %}
 
 
 Links: [User Guide](./user-guide.html) · [Releases](https://github.com/faded-penguin021/Advanced-Auto-Brightness/releases) · [Discussions](https://github.com/faded-penguin021/Advanced-Auto-Brightness/discussions)
 
-Author: [/u/v_uurtjevragen](https://www.reddit.com/user/v_uurtjevragen) · Version: 3.0
+Author: [/u/v_uurtjevragen](https://www.reddit.com/user/v_uurtjevragen) · Version: 3.0.68
 
 Plugin‑free Tasker project replacing Android auto‑brightness.
 
@@ -31,6 +31,10 @@ Plugin‑free Tasker project replacing Android auto‑brightness.
 - Circadian scaling (sunrise/sunset adjusts tone)
 - Manual override + foreground controls
 - Watchdog throttle (recovers if idle)
+
+## What's new in 3.0.68
+- Dynamic Scale Engine (circadian scaling): refined algorithm and fixes for smoother, more consistent day/night tone transitions.
+- “No Sunrise” variant: unchanged.
 
 ## Demo
 <strong>Original demo (human‑made)</strong>

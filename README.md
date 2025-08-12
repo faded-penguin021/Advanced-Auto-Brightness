@@ -36,9 +36,10 @@ Helpful links: [User Guide](docs/user-guide.md) · [Discussions](https://github.
 - Direct links: [App APK](https://github.com/faded-penguin021/Advanced-Auto-Brightness/releases/latest/download/Advanced-Auto-Brightness.apk) · [Project file](https://github.com/faded-penguin021/Advanced-Auto-Brightness/releases/latest/download/Advanced-Auto-Brightness.prj.xml)
 
 ## Demo
-<a href="docs/assets/aab-demo.mp4"><img src="assets/demo_thumb.jpg" alt="Watch the video (click)" width="480" style="max-width:100%; height:auto;"></a>
+- Original demo (human‑made): [docs/assets/demo.mp4](docs/assets/demo.mp4)
+- New demo (AI‑generated): [docs/assets/aab-demo.mp4](docs/assets/aab-demo.mp4)
 
-Note: This demo video was created by NotebookLM via AI.
+Note: The new demo video was created by NotebookLM via AI.
 
 ## How it works
 - Event‑driven monitor: reacts only when light change exits a dynamic dead‑zone

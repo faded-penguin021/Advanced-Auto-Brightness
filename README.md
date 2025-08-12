@@ -37,7 +37,7 @@ Helpful links: [User Guide](docs/user-guide.md) · [Discussions](https://github.
 
 ## Demo and overview
 - Original demo (human‑made): [docs/assets/demo.mp4](docs/assets/demo.mp4) — Smooth adaptation to changing light without flicker via dynamic dead‑zone and adaptive smoothing.
-- High‑level overview (AI‑generated): [docs/assets/aab-demo.mp4](docs/assets/aab-demo.mp4) — Project goals, core features, and the tuning workflow at a glance.
+- High‑level overview (AI‑generated): [docs/assets/aab-demo.mp4](docs/assets/aab-demo.mp4) — Project goals and core concepts at a glance.
 
 Note: The overview video was created by NotebookLM via AI.
 

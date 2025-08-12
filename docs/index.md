@@ -41,7 +41,7 @@ Shows the screen adapting smoothly to changing ambient light without flicker, th
 ## High‑level overview (AI‑generated)
 <video src="assets/aab-demo.mp4" controls poster="assets/demo_thumb.jpg" width="640" style="max-width:100%; height:auto;"></video>
 
-Explains the project at a high level: goals, core features, and how the tuning workflow fits together.
+Explains the project at a high level: goals and core concepts.
 
 Note: This overview video was created by NotebookLM via AI.
 
